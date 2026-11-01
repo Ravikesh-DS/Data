@@ -1,0 +1,22 @@
+table,rule,n_violations,pct
+transactions,amount is null,0,0.0
+transactions,amount < 0,98758,6.584
+transactions,amount = 0,0,0.0
+transactions,discount < 0,0,0.0
+transactions,discount > amount,0,0.0
+transactions,future timestamp,0,0.0
+engagements,session_duration < 0,0,0.0
+engagements,session_duration > 4h,0,0.0
+engagements,pages_viewed < 0,0,0.0
+interactions,duration < 0,0,0.0
+interactions,duration > 4h,0,0.0
+interactions,csat outside 1-5 (assumed scale),0,0.0
+interactions,nps outside 0-10,0,0.0
+interactions,"sentiment_score_gt outside [-1,1]",0,0.0
+interactions,label positive but score < 0,0,0.0
+interactions,label negative but score > 0,0,0.0
+interactions,text blank,0,0.0
+customers,age < 18 or > 100,0,0.0
+customers,tenure_months < 0,0,0.0
+customers,signup after data window,0,0.0
+customers,signup_date unparseable/null,0,0.0

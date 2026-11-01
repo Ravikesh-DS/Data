@@ -1,0 +1,76 @@
+group,feature,pct_non_null,mean
+customers (context only),customer_segment,100.0,
+customers (context only),loyalty_tier,100.0,
+customers (context only),tenure_months_asof,100.0,39.1052
+source presence,has_interactions,100.0,0.3152
+source presence,has_engagements,100.0,0.4466
+source presence,has_transactions,100.0,0.4328
+source presence,n_sources,100.0,1.1946
+source presence,source_combo,100.0,
+interactions,int_count,31.52,1.0805
+interactions,complaint_count,31.52,0.2733
+interactions,complaint_rate,31.52,0.2551
+interactions,unresolved_count,31.52,0.2003
+interactions,unresolved_rate,31.52,0.1869
+interactions,fcr_rate,31.52,0.6615
+interactions (label-derived: EDA/evaluation only),sentiment_pos_share,31.52,0.4915
+interactions (label-derived: EDA/evaluation only),sentiment_neu_share,31.52,0.17
+interactions (label-derived: EDA/evaluation only),sentiment_neg_share,31.52,0.3385
+CSAT,csat_available,100.0,0.1481
+CSAT,csat_response_count,100.0,0.1534
+CSAT,csat_invalid_count,100.0,0.0
+CSAT,avg_csat_rating,14.81,3.1725
+CSAT,latest_csat_rating,14.81,3.1723
+CSAT,csat_health_score,14.81,54.3133
+CSAT,csat_low_flag,14.81,0.2997
+CSAT,csat_high_flag,14.81,0.4289
+NPS,nps_available,100.0,0.0405
+NPS,nps_response_count,100.0,0.0409
+NPS,nps_invalid_count,100.0,0.0
+NPS,avg_nps_rating,4.05,6.793
+NPS,latest_nps_rating,4.05,6.7929
+NPS,nps_detractor_count,100.0,0.0176
+NPS,nps_passive_count,100.0,0.0128
+NPS,nps_promoter_count,100.0,0.0105
+NPS,nps_detractor_share,4.05,0.4299
+NPS,nps_passive_share,4.05,0.3131
+NPS,nps_promoter_share,4.05,0.257
+NPS,nps_loyalty_score,4.05,41.3594
+NPS,nps_net_score,4.05,-17.2812
+engagements,n_eng,44.66,1.144
+engagements,login_count,44.66,0.1761
+engagements,conversion_rate,44.66,0.037
+engagements,eng_seconds,44.66,162.8936
+engagements,avg_session_sec,29.03,229.2135
+engagements,pages_viewed,44.66,2.974
+engagements,eng_positive_count,44.66,0.5223
+engagements,eng_neutral_count,44.66,0.5055
+engagements,eng_negative_count,44.66,0.1162
+engagements,unsubscribe_count,44.66,0.0342
+engagements,positive_engagement_share,26.38,0.8178
+engagements,eng_pctile,44.66,0.1094
+transactions,n_tx,43.28,1.1804
+transactions,tx_success_rate,43.28,0.9547
+transactions,tx_failed_rate,43.28,0.0351
+transactions,failed_payment_rate,11.24,0.035
+transactions,payment_attempt_count,43.28,0.2711
+transactions,refund_count,43.28,0.0777
+transactions,reversal_count,43.28,0.012
+transactions,n_fees,43.28,0.0355
+transactions,n_fees_completed,43.28,0.0339
+transactions,n_fees_failed,43.28,0.0013
+transactions,n_fees_reversed,43.28,0.0004
+transactions,fee_completed_amt,43.28,7.7068
+transactions,fee_reversed_amt,43.28,0.0748
+transactions,net_fee_amt,43.28,7.632
+transactions,tx_currency,43.28,
+transactions,n_currencies,43.28,1.0
+transactions,gross_spend_native,43.28,230.6215
+transactions,refund_amt_native,43.28,16.6811
+transactions,net_spend_native,43.28,213.9404
+transactions,total_customer_outflow,43.28,238.2535
+transactions,spend_pctile,43.28,0.4928
+trends (own history),spend_base_3m,34.54,237.3228
+trends (own history),spend_change_vs_base,5.8,1.8408
+trends (own history),eng_base_3m,36.53,1.1732
+trends (own history),eng_change_vs_base,4.99,0.0648

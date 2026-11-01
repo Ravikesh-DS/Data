@@ -1,0 +1,6 @@
+question,topic,top_channel,top_channel_group,top_value_pct,overall_pct,lift_vs_overall,spread_pp,effect_size,effect_metric,p_value,conclusion
+Q1,Highest complaint rate,phone,assisted_live,25.39,25.3,1.004,0.23,0.0023,Cramer's V,0.39993110054810177,"highest, but differences across channels are negligible"
+Q2,Highest proportion of negative sentiment,email,asynchronous,33.47,33.42,1.002,0.21,0.0013,Cramer's V,0.8852194114621549,"highest, but differences across channels are negligible"
+Q3,Highest unresolved interaction rate,branch,assisted_live,18.68,18.54,1.007,0.21,0.0017,Cramer's V,0.7144974601346851,"highest, but differences across channels are negligible"
+Q4,Does CSAT vary across channels?,high: branch / low: phone,assisted_live / assisted_live,3.183,3.178,1.003,0.009,-1e-05,epsilon-squared (Kruskal-Wallis),0.9199164113102966,CSAT is effectively the same across channels
+Q5,Cancellation requests more frequent through specific channels,social_media,public_social,4.43,4.37,1.013,0.11,0.002,Cramer's V,0.5375412121386375,"highest, but differences across channels are negligible"

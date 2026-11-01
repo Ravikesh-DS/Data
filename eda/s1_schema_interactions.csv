@@ -1,0 +1,18 @@
+column_name,column_type,table
+interaction_id,VARCHAR,interactions
+customer_id,VARCHAR,interactions
+interaction_ts,TIMESTAMP,interactions
+month,VARCHAR,interactions
+channel,VARCHAR,interactions
+interaction_type,VARCHAR,interactions
+agent_id,VARCHAR,interactions
+duration_sec,INTEGER,interactions
+resolution_status,VARCHAR,interactions
+first_contact_resolution,VARCHAR,interactions
+csat_score,INTEGER,interactions
+nps_score,INTEGER,interactions
+interaction_text,VARCHAR,interactions
+sentiment_label,VARCHAR,interactions
+sentiment_score_gt,DOUBLE,interactions
+_source_file,VARCHAR,interactions
+_ingested_at,TIMESTAMP WITH TIME ZONE,interactions

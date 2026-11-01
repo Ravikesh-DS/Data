@@ -1,0 +1,4 @@
+table,min_ts,max_ts,unparseable_ts,outside_window,month_col_mismatch,n_months
+transactions,2025-10-01 00:00:08,2026-09-30 23:59:51,0.0,0.0,0.0,12
+engagements,2025-10-01 00:00:23,2026-09-30 23:59:13,0.0,0.0,0.0,12
+interactions,2025-10-01 00:00:05,2026-09-30 23:59:57,0.0,0.0,0.0,12

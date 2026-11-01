@@ -1,0 +1,7 @@
+channel,channel_group,n,n_complaint,n_negative,n_unresolved,n_cancel,n_csat,avg_csat,median_csat,pct_low_csat,complaint_rate,complaint_lift,negative_pct,negative_lift,unresolved_rate,unresolved_lift,cancellation_rate,cancellation_lift,cancellation_share_of_all_cancellations,interaction_share
+phone,assisted_live,279790,71031.0,93573.0,51779.0,12286.0,126363,3.174,3.0,29.356,25.387,1.004,33.444,1.001,18.506,0.998,4.391,1.005,28.127,27.979
+chat,assisted_digital,269971,67919.0,90147.0,49858.0,11644.0,121259,3.178,3.0,29.383,25.158,0.995,33.391,0.999,18.468,0.996,4.313,0.987,26.657,26.997
+email,asynchronous,200048,50754.0,66965.0,37240.0,8822.0,90241,3.179,3.0,29.267,25.371,1.003,33.474,1.002,18.616,1.004,4.41,1.01,20.196,20.005
+in_app_support,assisted_digital,130315,32870.0,43593.0,24241.0,5649.0,58654,3.179,3.0,29.296,25.223,0.997,33.452,1.001,18.602,1.003,4.335,0.992,12.932,13.032
+social_media,public_social,70296,17821.0,23390.0,13006.0,3112.0,31736,3.18,3.0,29.122,25.351,1.002,33.274,0.996,18.502,0.998,4.427,1.013,7.124,7.03
+branch,assisted_live,49580,12573.0,16491.0,9260.0,2168.0,22279,3.183,3.0,29.319,25.359,1.002,33.261,0.995,18.677,1.007,4.373,1.001,4.963,4.958

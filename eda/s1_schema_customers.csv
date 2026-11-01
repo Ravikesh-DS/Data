@@ -1,0 +1,16 @@
+column_name,column_type,table
+customer_id,VARCHAR,customers
+signup_date,DATE,customers
+age,INTEGER,customers
+gender,VARCHAR,customers
+region,VARCHAR,customers
+country,VARCHAR,customers
+customer_segment,VARCHAR,customers
+acquisition_channel,VARCHAR,customers
+income_band,VARCHAR,customers
+preferred_channel,VARCHAR,customers
+loyalty_tier,VARCHAR,customers
+tenure_months,INTEGER,customers
+marketing_consent,VARCHAR,customers
+_source_file,VARCHAR,customers
+_ingested_at,TIMESTAMP WITH TIME ZONE,customers

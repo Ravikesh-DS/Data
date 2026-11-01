@@ -1,0 +1,4 @@
+table,n_customers,orphan_customers,orphan_rows,null_customer_id_rows,pct_customers_found
+transactions,559852.0,0.0,0.0,0.0,100.0
+engagements,590921.0,0.0,0.0,0.0,100.0
+interactions,526420.0,0.0,0.0,0.0,100.0

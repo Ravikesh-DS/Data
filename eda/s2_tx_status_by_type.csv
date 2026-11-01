@@ -1,0 +1,16 @@
+transaction_type,transaction_status,n,pct_rows,n_negative_amount,median_amount
+purchase,completed,965930,64.4,0.0,94.82
+subscription_payment,completed,171850,11.46,0.0,94.56
+bill_payment,completed,157128,10.48,0.0,94.48
+refund,completed,94312,6.29,94312.0,-94.53
+fee,completed,43023,2.87,0.0,94.13
+purchase,failed,35382,2.36,0.0,95.43
+purchase,reversed,10309,0.69,0.0,92.68
+subscription_payment,failed,6306,0.42,0.0,92.91
+bill_payment,failed,5780,0.39,0.0,96.75
+refund,failed,3451,0.23,3451.0,-92.8
+subscription_payment,reversed,1823,0.12,0.0,92.41
+bill_payment,reversed,1652,0.11,0.0,89.12
+fee,failed,1608,0.11,0.0,92.6
+refund,reversed,995,0.07,995.0,-93.0
+fee,reversed,451,0.03,0.0,101.06

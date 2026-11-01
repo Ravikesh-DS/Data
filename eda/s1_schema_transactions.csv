@@ -1,0 +1,16 @@
+column_name,column_type,table
+transaction_id,VARCHAR,transactions
+customer_id,VARCHAR,transactions
+transaction_ts,TIMESTAMP,transactions
+month,VARCHAR,transactions
+transaction_type,VARCHAR,transactions
+product_category,VARCHAR,transactions
+amount,DOUBLE,transactions
+currency,VARCHAR,transactions
+discount_amount,DOUBLE,transactions
+payment_method,VARCHAR,transactions
+merchant_channel,VARCHAR,transactions
+transaction_status,VARCHAR,transactions
+is_international,VARCHAR,transactions
+_source_file,VARCHAR,transactions
+_ingested_at,TIMESTAMP WITH TIME ZONE,transactions

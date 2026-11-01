@@ -1,0 +1,5 @@
+table,n_rows,n_cols,primary_key,pk_duplicates,full_row_duplicates,n_customers,rows_per_customer,grain
+customers,1000000,15,customer_id,0,0,1000000,1.0,1 row = 1 customer
+transactions,1500000,15,transaction_id,0,0,559852,2.68,1 row = 1 transaction event
+engagements,1500000,14,engagement_id,0,0,590921,2.54,1 row = 1 engagement event
+interactions,1000000,17,interaction_id,0,0,526420,1.9,1 row = 1 interaction event

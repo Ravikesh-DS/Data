@@ -1,0 +1,27 @@
+tbl,col,n_levels,n_rare_levels,top_level,top_pct
+tx,transaction_type,5,0,purchase,67.441
+tx,product_category,10,0,Groceries,20.041
+tx,currency,5,0,USD,60.094
+tx,payment_method,6,0,credit_card,31.989
+tx,merchant_channel,4,0,online,34.033
+tx,transaction_status,3,0,completed,95.483
+tx,is_international,2,0,N,93.862
+eng,engagement_channel,5,0,mobile_app,34.036
+eng,event_type,14,1,login,15.393
+eng,device_type,4,0,ios,36.212
+eng,app_version,5,0,,65.964
+eng,is_converted,2,0,N,96.299
+itx,channel,6,0,phone,27.979
+itx,interaction_type,8,0,general_inquiry,34.144
+itx,resolution_status,4,0,resolved,81.462
+itx,first_contact_resolution,2,0,Y,66.421
+itx,sentiment_label,3,0,positive,49.653
+cust,gender,4,0,F,47.998
+cust,region,5,0,North America,34.049
+cust,country,22,1,US,26.538
+cust,customer_segment,5,0,Mass Market,50.068
+cust,acquisition_channel,7,0,Organic Search,22.047
+cust,income_band,5,0,50-100K,31.871
+cust,preferred_channel,5,0,mobile_app,37.933
+cust,loyalty_tier,5,0,Bronze,40.0
+cust,marketing_consent,2,0,Y,82.016

@@ -1,0 +1,5 @@
+channel_group,n,n_complaint,n_negative,n_unresolved,n_cancel,complaint_rate,negative_pct,unresolved_rate,cancellation_rate
+assisted_digital,400286,100789.0,133740.0,74099.0,17293.0,25.179,33.411,18.512,4.32
+assisted_live,329370,83604.0,110064.0,61039.0,14454.0,25.383,33.417,18.532,4.388
+asynchronous,200048,50754.0,66965.0,37240.0,8822.0,25.371,33.474,18.616,4.41
+public_social,70296,17821.0,23390.0,13006.0,3112.0,25.351,33.274,18.502,4.427

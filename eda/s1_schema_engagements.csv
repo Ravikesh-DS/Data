@@ -1,0 +1,15 @@
+column_name,column_type,table
+engagement_id,VARCHAR,engagements
+customer_id,VARCHAR,engagements
+event_ts,TIMESTAMP,engagements
+month,VARCHAR,engagements
+engagement_channel,VARCHAR,engagements
+event_type,VARCHAR,engagements
+session_duration_sec,INTEGER,engagements
+pages_viewed,INTEGER,engagements
+campaign_id,VARCHAR,engagements
+device_type,VARCHAR,engagements
+app_version,VARCHAR,engagements
+is_converted,VARCHAR,engagements
+_source_file,VARCHAR,engagements
+_ingested_at,TIMESTAMP WITH TIME ZONE,engagements

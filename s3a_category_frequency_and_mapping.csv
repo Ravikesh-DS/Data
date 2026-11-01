@@ -1,0 +1,49 @@
+source,column,value,n,pct,mapped_to
+tx,transaction_type,purchase,1011621,67.44,SPEND_TYPES
+tx,transaction_type,subscription_payment,179979,12.0,"SPEND_TYPES, PAYMENT_TYPES"
+tx,transaction_type,bill_payment,164560,10.97,"SPEND_TYPES, PAYMENT_TYPES"
+tx,transaction_type,refund,98758,6.58,REFUND_TYPES
+tx,transaction_type,fee,45082,3.01,-- not mapped --
+tx,transaction_status,completed,1432243,95.48,TX_SUCCESS
+tx,transaction_status,failed,52527,3.5,TX_FAILED
+tx,transaction_status,reversed,15230,1.02,TX_REVERSED
+itx,interaction_type,general_inquiry,341435,34.14,-- not mapped --
+itx,interaction_type,complaint,126201,12.62,COMPLAINT_TYPES
+itx,interaction_type,feedback,118719,11.87,-- not mapped --
+itx,interaction_type,product_request,110582,11.06,-- not mapped --
+itx,interaction_type,technical_issue,108682,10.87,-- not mapped --
+itx,interaction_type,billing_dispute,83086,8.31,COMPLAINT_TYPES
+itx,interaction_type,compliment,67614,6.76,-- not mapped --
+itx,interaction_type,cancellation_request,43681,4.37,COMPLAINT_TYPES
+itx,resolution_status,resolved,814616,81.46,RESOLVED_STATUS
+itx,resolution_status,escalated,74132,7.41,OPEN_RESOLUTION
+itx,resolution_status,pending,60718,6.07,OPEN_RESOLUTION
+itx,resolution_status,unresolved,50534,5.05,OPEN_RESOLUTION
+itx,channel,phone,279790,27.98,-- not mapped --
+itx,channel,chat,269971,27.0,-- not mapped --
+itx,channel,email,200048,20.0,-- not mapped --
+itx,channel,in_app_support,130315,13.03,-- not mapped --
+itx,channel,social_media,70296,7.03,-- not mapped --
+itx,channel,branch,49580,4.96,-- not mapped --
+itx,sentiment_label,positive,496526,49.65,-- not mapped --
+itx,sentiment_label,negative,334159,33.42,-- not mapped --
+itx,sentiment_label,neutral,169315,16.93,-- not mapped --
+eng,event_type,login,230892,15.39,ENG_POSITIVE
+eng,event_type,offer_view,179136,11.94,ENG_NEUTRAL
+eng,event_type,page_view,175281,11.69,ENG_NEUTRAL
+eng,event_type,email_open,173051,11.54,ENG_NEUTRAL
+eng,event_type,feature_use,153071,10.2,ENG_POSITIVE
+eng,event_type,session_end,135381,9.03,ENG_NEUTRAL
+eng,event_type,push_dismiss,107481,7.17,ENG_NEGATIVE
+eng,event_type,email_click,92343,6.16,ENG_POSITIVE
+eng,event_type,push_open,58713,3.91,ENG_POSITIVE
+eng,event_type,offer_redeem,55511,3.7,ENG_POSITIVE
+eng,event_type,sms_reply,52610,3.51,ENG_POSITIVE
+eng,event_type,sms_click,41679,2.78,ENG_POSITIVE
+eng,event_type,unsubscribe,34390,2.29,ENG_NEGATIVE
+eng,event_type,sms_optout,10461,0.7,ENG_NEGATIVE
+eng,engagement_channel,mobile_app,510543,34.04,-- not mapped --
+eng,engagement_channel,web,389624,25.97,-- not mapped --
+eng,engagement_channel,email,299784,19.99,-- not mapped --
+eng,engagement_channel,push_notification,195299,13.02,-- not mapped --
+eng,engagement_channel,sms,104750,6.98,-- not mapped --

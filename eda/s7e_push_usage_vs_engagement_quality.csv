@@ -1,0 +1,5 @@
+push_usage,customer_months,avg_non_push_events,avg_non_push_quality,pct_with_conversion,pct_with_unsubscribe
+0_no_push,1119541,1.1217,0.9326,4.7462,3.8577
+1_push_other_only,28139,0.2504,0.9417,1.027,0.7356
+2_mostly_dismisses,105193,0.2553,0.9415,1.1179,0.7539
+3_mostly_opens,58342,0.2576,0.9392,1.0387,0.7902

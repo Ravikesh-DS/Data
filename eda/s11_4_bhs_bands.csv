@@ -1,0 +1,4 @@
+bhs_band,n,avg_bhs,most_common_weakest_component
+at_risk,163542,21.22,tx_reliability
+watch,367781,52.04,spend_level
+healthy,1183571,78.68,spend_level

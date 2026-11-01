@@ -1,0 +1,7 @@
+channel,n,pct_escalated,pct_pending,pct_resolved,pct_unresolved,lift_escalated,lift_pending,lift_resolved,lift_unresolved
+branch,49580,7.38,6.13,81.32,5.18,0.996,1.01,0.998,1.025
+chat,269971,7.37,6.06,81.53,5.03,0.994,0.998,1.001,0.995
+email,200048,7.47,6.01,81.38,5.14,1.008,0.99,0.999,1.017
+in_app_support,130315,7.41,6.17,81.4,5.03,1.0,1.016,0.999,0.995
+phone,279790,7.44,6.06,81.49,5.01,1.004,0.998,1.0,0.991
+social_media,70296,7.33,6.14,81.5,5.03,0.989,1.011,1.0,0.995

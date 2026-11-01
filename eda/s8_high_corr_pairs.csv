@@ -1,0 +1,5 @@
+feature_a,feature_b,spearman
+eng_seconds,pages_viewed,0.949
+n_negative,avg_sentiment_gt,-0.815
+avg_sentiment_gt,avg_csat,0.818
+avg_sentiment_gt,avg_nps,0.8

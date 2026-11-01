@@ -1,0 +1,9 @@
+interaction_type,n,pct_positive,pct_neutral,pct_negative,avg_sentiment_gt
+general_inquiry,341435,67.78,18.24,13.98,0.353
+complaint,126201,10.65,17.44,71.91,-0.401
+feedback,118719,74.3,15.61,10.09,0.426
+product_request,110582,73.52,15.95,10.53,0.418
+technical_issue,108682,10.72,17.28,72.0,-0.398
+billing_dispute,83086,10.7,17.39,71.91,-0.399
+compliment,67614,84.38,11.75,3.87,0.543
+cancellation_request,43681,10.47,17.55,71.99,-0.401

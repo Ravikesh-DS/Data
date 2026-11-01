@@ -1,0 +1,4 @@
+metric,kruskal_h,p_value,epsilon_squared
+csat,139436.0,0.0,0.3095
+nps,36642.77,0.0,0.305
+resolution_status (Cramer's V),,0.0,0.1266

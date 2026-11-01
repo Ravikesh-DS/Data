@@ -1,0 +1,6 @@
+signal_in_month_M,n_customer_months,pct_active_M1,pct_inactive_next_3_months,pct_spend_drop_gt30_M1,pct_eng_drop_gt30_M1
+1_cancellation_request,30322,36.67,32.2,85.25,77.53
+2_complaint_or_dispute,141971,36.86,32.24,84.52,77.68
+3_negative_interaction,99717,34.54,34.57,85.84,79.17
+4_other_interaction,375707,42.48,26.56,82.5,74.38
+5_no_interaction,1467810,39.58,28.98,88.34,82.68

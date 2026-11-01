@@ -1,0 +1,2 @@
+csat_fill_pct,nps_fill_pct,any_survey_pct,corr_sentiment_csat,corr_sentiment_nps,corr_csat_nps
+45.05,12.01,51.65,0.823,0.816,0.67

@@ -1,0 +1,5 @@
+bhs_confidence_band,n,pct,avg_weight_coverage,avg_component_conf,avg_sources,avg_months_observed
+low,1277913,43.52,0.322,0.394,1.12,4.38
+not_available,1221301,41.59,0.159,0.335,1.02,4.55
+medium,401752,13.68,0.48,0.506,1.84,7.32
+high,35229,1.2,0.765,0.591,2.71,7.97

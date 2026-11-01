@@ -1,0 +1,3 @@
+metric,kruskal_h,p_value,epsilon_squared
+csat,1.44,0.9199164113102966,-1e-05
+nps,3.68,0.5965861543423908,-1e-05

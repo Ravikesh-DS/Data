@@ -1,0 +1,4 @@
+neg_sent_band,customer_months,avg_negative_engagement_share,pct_with_negative_engagement
+0_none,132349,0.0951,11.5823
+1_some (<=50%),4853,0.1046,13.3114
+2_mostly (>50%),50323,0.1116,12.7874

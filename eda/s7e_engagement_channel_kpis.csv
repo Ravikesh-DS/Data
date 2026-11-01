@@ -1,0 +1,6 @@
+engagement_channel,n_events,n_customers,pct_positive,pct_neutral,pct_negative,n_conversions,conversion_rate,n_unsubscribe_optout,unsubscribe_optout_rate,pct_customers_unsubscribed,pct_zero_duration,median_session_sec,mean_session_sec,p90_session_sec
+mobile_app,510543,332673,67.01,32.99,0.0,36082.0,7.067,0.0,0.0,0.0,0.0,152.0,229.8,489.0
+web,389624,276176,24.99,75.01,0.0,19429.0,4.987,0.0,0.0,0.0,0.0,152.0,229.9,490.0
+email,299784,227414,30.8,57.73,11.47,0.0,0.0,34390.0,11.472,14.578,100.0,,,
+push_notification,195299,161621,30.06,14.9,55.03,0.0,0.0,0.0,0.0,0.0,85.1,153.0,229.3,486.0
+sms,104750,94299,90.01,0.0,9.99,0.0,0.0,10461.0,9.987,10.983,100.0,,,

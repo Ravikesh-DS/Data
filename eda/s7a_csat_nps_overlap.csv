@@ -1,0 +1,5 @@
+csat_available,nps_available,n,pct
+False,False,483506,48.35
+False,True,65962,6.6
+True,False,396376,39.64
+True,True,54156,5.42

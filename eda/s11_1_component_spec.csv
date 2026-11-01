@@ -1,0 +1,9 @@
+component,initial_weight,normalised_range,description,value_sql,component_confidence_sql
+tx_reliability,0.15,0-100,Share of transactions completed (not failed/reversed),CASE WHEN has_transactions = 1 AND n_tx > 0 THEN 100.0 * tx_success_rate END,"least(n_tx / 3.0, 1)"
+spend_level,0.15,0-100,Gross spend percentile within month and currency,CASE WHEN has_transactions = 1 AND spend_pctile IS NOT NULL THEN 100.0 * spend_pctile END,"least(n_tx / 3.0, 1)"
+spend_trend,0.1,0-100,Spend vs own prior-3-month average (50 = stable),"CASE WHEN spend_change_vs_base IS NOT NULL THEN 50 + 50 * greatest(-1, least(1, spend_change_vs_base)) END",spend_base_months / 3.0
+engagement_level,0.1,0-100,Engagement events percentile within month,CASE WHEN has_engagements = 1 THEN 100.0 * eng_pctile END,"least(n_eng / 5.0, 1)"
+engagement_quality,0.1,0-100,Positive / (positive + negative) engagement,CASE WHEN positive_engagement_share IS NOT NULL THEN 100.0 * positive_engagement_share END,"least((eng_positive_count + eng_negative_count) / 3.0, 1)"
+engagement_trend,0.1,0-100,Engagement vs own prior-3-month average (50 = stable),"CASE WHEN eng_change_vs_base IS NOT NULL THEN 50 + 50 * greatest(-1, least(1, eng_change_vs_base)) END",eng_base_months / 3.0
+service_experience,0.15,0-100,Few complaints and unresolved issues,CASE WHEN int_count > 0 THEN 100.0 * (1 - 0.5 * complaint_rate - 0.5 * unresolved_rate) END,"least(int_count / 2.0, 1)"
+csat_health,0.15,0-100,Mean normalised CSAT (valid ratings),CASE WHEN csat_available = 1 THEN csat_health_score END,"least(csat_response_count / 2.0, 1)"

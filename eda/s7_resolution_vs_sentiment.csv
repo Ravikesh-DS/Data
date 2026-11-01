@@ -1,0 +1,5 @@
+resolution_status,n,avg_sentiment_gt,avg_csat,fcr_pct
+resolved,814616,0.21,3.34,81.54
+escalated,74132,-0.329,2.469,0.0
+pending,60718,-0.33,2.464,0.0
+unresolved,50534,-0.334,2.454,0.0

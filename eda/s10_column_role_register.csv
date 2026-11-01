@@ -1,0 +1,62 @@
+table,column,role,note
+customers,customer_id,id,join key
+customers,signup_date,context,used to derive tenure per month
+customers,age,context only,do not lower health/sentiment
+customers,gender,context only,do not lower health/sentiment
+customers,region,context / segmentation,
+customers,country,context / segmentation,
+customers,customer_segment,context / segmentation,
+customers,acquisition_channel,context,
+customers,income_band,context only,do not lower health/sentiment
+customers,preferred_channel,context / action routing,
+customers,loyalty_tier,context (snapshot),"may reflect end-of-period status - context only, never a penalty"
+customers,tenure_months,context (snapshot),likely as-of a single date - recompute per month from signup_date
+customers,marketing_consent,action constraint,check before recommending outreach
+customers,_source_file,feature candidate,aggregate to customer-month using data <= month M
+customers,_ingested_at,feature candidate,aggregate to customer-month using data <= month M
+transactions,transaction_id,id,
+transactions,customer_id,id,join key
+transactions,transaction_ts,feature candidate,aggregate to customer-month using data <= month M
+transactions,month,time key,re-derive from timestamp
+transactions,transaction_type,feature candidate,aggregate to customer-month using data <= month M
+transactions,product_category,feature candidate,aggregate to customer-month using data <= month M
+transactions,amount,feature candidate,aggregate to customer-month using data <= month M
+transactions,currency,feature candidate,aggregate to customer-month using data <= month M
+transactions,discount_amount,feature candidate,aggregate to customer-month using data <= month M
+transactions,payment_method,feature candidate,aggregate to customer-month using data <= month M
+transactions,merchant_channel,feature candidate,aggregate to customer-month using data <= month M
+transactions,transaction_status,feature candidate,aggregate to customer-month using data <= month M
+transactions,is_international,feature candidate,aggregate to customer-month using data <= month M
+transactions,_source_file,feature candidate,aggregate to customer-month using data <= month M
+transactions,_ingested_at,feature candidate,aggregate to customer-month using data <= month M
+engagements,engagement_id,id,
+engagements,customer_id,id,join key
+engagements,event_ts,feature candidate,aggregate to customer-month using data <= month M
+engagements,month,time key,re-derive from timestamp
+engagements,engagement_channel,feature candidate,aggregate to customer-month using data <= month M
+engagements,event_type,feature candidate,aggregate to customer-month using data <= month M
+engagements,session_duration_sec,feature candidate,aggregate to customer-month using data <= month M
+engagements,pages_viewed,feature candidate,aggregate to customer-month using data <= month M
+engagements,campaign_id,feature candidate,aggregate to customer-month using data <= month M
+engagements,device_type,feature candidate,aggregate to customer-month using data <= month M
+engagements,app_version,feature candidate,aggregate to customer-month using data <= month M
+engagements,is_converted,feature candidate,aggregate to customer-month using data <= month M
+engagements,_source_file,feature candidate,aggregate to customer-month using data <= month M
+engagements,_ingested_at,feature candidate,aggregate to customer-month using data <= month M
+interactions,interaction_id,id,
+interactions,customer_id,id,join key
+interactions,interaction_ts,feature candidate,aggregate to customer-month using data <= month M
+interactions,month,time key,re-derive from timestamp
+interactions,channel,feature candidate,aggregate to customer-month using data <= month M
+interactions,interaction_type,feature candidate,aggregate to customer-month using data <= month M
+interactions,agent_id,id,not a customer feature
+interactions,duration_sec,feature candidate,aggregate to customer-month using data <= month M
+interactions,resolution_status,feature candidate,aggregate to customer-month using data <= month M
+interactions,first_contact_resolution,feature candidate,aggregate to customer-month using data <= month M
+interactions,csat_score,validation label,use to validate sentiment; sparse
+interactions,nps_score,validation label,use to validate sentiment; sparse
+interactions,interaction_text,feature candidate,aggregate to customer-month using data <= month M
+interactions,sentiment_label,label / evaluation only,ground truth - never a feature
+interactions,sentiment_score_gt,label / evaluation only,ground truth - never a feature
+interactions,_source_file,feature candidate,aggregate to customer-month using data <= month M
+interactions,_ingested_at,feature candidate,aggregate to customer-month using data <= month M

@@ -1,0 +1,7 @@
+channel,n,pct_negative,csat_fill_pct,nps_fill_pct,avg_sentiment_gt
+phone,279790,33.44,45.16,12.04,0.108
+chat,269971,33.39,44.92,12.03,0.11
+email,200048,33.47,45.11,11.9,0.109
+in_app_support,130315,33.45,45.01,12.1,0.111
+social_media,70296,33.27,45.15,12.19,0.11
+branch,49580,33.26,44.94,11.7,0.109

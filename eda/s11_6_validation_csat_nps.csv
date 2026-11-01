@@ -1,0 +1,7 @@
+check,value,n
+Spearman BHS(leave-CSAT-out) vs avg CSAT,0.38049060872544777,434728
+AUC low CSAT (<=2) from low BHS(leave-CSAT-out),0.7120859372211166,434728
+Spearman BHS vs avg NPS,0.5259047532081838,75196
+AUC net-detractor month from low BHS,0.7826695078079438,75196
+Spearman Loyalty score vs Sentiment score (separate scores),0.7553772173837097,75196
+Spearman BHS vs Sentiment score,0.7234912121372898,452034

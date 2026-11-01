@@ -1,0 +1,2 @@
+n,blank_pct,avg_chars,p50_chars,p95_chars,lt3_words_pct,non_ascii_pct,n_distinct_texts,distinct_text_pct
+1000000,0.0,64.2,63.0,80.0,0.0,0.0,360,0.04

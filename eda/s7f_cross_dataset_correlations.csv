@@ -1,0 +1,4 @@
+interaction_metric,engagement_metric,spearman,customer_months
+negative sentiment share,negative engagement share,0.0189,187525
+complaint count,positive engagement share,-0.0099,113469
+avg CSAT,negative engagement share,-0.0123,89926

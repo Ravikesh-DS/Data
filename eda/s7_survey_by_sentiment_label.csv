@@ -1,0 +1,4 @@
+sentiment_label,avg_csat,avg_nps,n_csat,n_nps
+negative,2.045,4.615,150517,40163
+neutral,3.007,6.525,76460,20293
+positive,3.999,8.356,223555,59662

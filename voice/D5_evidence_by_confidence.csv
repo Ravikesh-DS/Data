@@ -1,0 +1,9 @@
+evidence_basis,confidence_band,n,pct_of_scored,avg_score,avg_conf
+text,low,414562,44.79,0.099,0.5
+text+csat,high,371044,40.09,0.101,0.683
+text+csat+nps,high,57227,6.18,0.157,0.799
+text+nps,high,56136,6.07,0.209,0.679
+text,medium,15190,1.64,0.169,0.604
+text+csat,medium,5794,0.63,0.036,0.609
+text+nps,medium,4922,0.53,-0.32,0.614
+text+csat+nps,medium,663,0.07,-0.246,0.723

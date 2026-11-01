@@ -1,0 +1,4 @@
+sentiment_label,n_nps,avg_nps,avg_csat,promoter_pct,detractor_pct,nps_index
+negative,40163,4.61,2.04,0.4,90.0,-89.6
+neutral,20293,6.53,3.01,7.1,49.1,-42.1
+positive,59662,8.36,4.0,49.1,9.2,40.0

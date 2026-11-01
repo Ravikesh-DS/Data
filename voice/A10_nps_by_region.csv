@@ -1,0 +1,6 @@
+region,customers_with_nps,n_nps,nps_resp_pct,avg_nps,avg_csat,nps_index,suppressed
+LATAM,10862,11970,12.03,6.77,3.17,-17.4,False
+Europe,28588,31628,12.1,6.78,3.18,-17.7,False
+APAC,25760,28424,11.91,6.79,3.18,-17.7,False
+Middle East & Africa,6620,7323,12.13,6.8,3.17,-17.6,False
+North America,36866,40773,11.98,6.82,3.18,-16.4,False

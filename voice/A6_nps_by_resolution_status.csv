@@ -1,0 +1,5 @@
+resolution_status,n_nps,avg_nps,avg_csat,promoter_pct,detractor_pct,nps_index
+unresolved,5996,5.41,2.45,7.6,71.3,-63.7
+pending,7351,5.44,2.46,8.1,70.7,-62.6
+escalated,8797,5.44,2.47,8.1,70.9,-62.9
+resolved,97974,7.1,3.34,29.8,36.6,-6.8

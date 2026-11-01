@@ -1,0 +1,71 @@
+column_name,column_type,group,description
+customer_id,VARCHAR,key,Customer identifier
+mth,DATE,key,Month (first day)
+split,VARCHAR,key,Customer-grouped train/test assignment used by all validation
+loyalty_tier,VARCHAR,context only,Never used in score; for benchmarks/fairness
+customer_segment,VARCHAR,context only,
+region,VARCHAR,context only,
+preferred_channel,VARCHAR,context only,Action routing
+marketing_consent,BOOLEAN,context only,Gate for marketing actions
+n_tx,BIGINT,activity,Transactions in month
+n_eng,BIGINT,activity,Engagement events
+n_int,BIGINT,activity,Interactions
+has_tx,BOOLEAN,activity,
+has_eng,BOOLEAN,activity,
+has_int,BOOLEAN,activity,
+active,BOOLEAN,activity,Any source present
+n_sources,INTEGER,activity,0-3 behavioural sources
+source_combo,VARCHAR,activity,TX/ENG/INT combination
+n_text,BIGINT,interaction evidence,Interactions with a text score
+text_avg,DOUBLE,interaction evidence,Mean text sentiment (-1..1)
+text_min,DOUBLE,interaction evidence,Most negative text
+n_text_negative,HUGEINT,interaction evidence,
+n_issue_contacts,HUGEINT,interaction evidence,Complaint/billing/cancel/technical
+n_cancel_req,HUGEINT,interaction evidence,
+n_open_issue,HUGEINT,interaction evidence,Unresolved/escalated/pending
+last_interaction_ts,TIMESTAMP,interaction evidence,
+has_csat,BOOLEAN,survey evidence,Observed flag - NOT a model feature
+n_csat,BIGINT,survey evidence,Responses (0 if none)
+csat_avg,DOUBLE,survey evidence,NULL if not observed
+csat_min,DOUBLE,survey evidence,NULL if not observed
+csat_norm_avg,DOUBLE,survey evidence,"(CSAT-3)/2, NULL if not observed"
+n_csat_low,HUGEINT,survey evidence,CSAT <= 2
+has_nps,BOOLEAN,survey evidence,Observed flag - NOT a model feature
+n_nps,BIGINT,survey evidence,Responses (0 if none)
+nps_avg,DOUBLE,survey evidence,NULL if not observed
+nps_min,DOUBLE,survey evidence,Used for triggers
+nps_max,DOUBLE,survey evidence,
+nps_norm_avg,DOUBLE,survey evidence,"(NPS-5)/5, NULL if not observed"
+nps_first_in_month,DOUBLE,survey evidence,Earliest response (validation outcome)
+nps_last_in_month,DOUBLE,survey evidence,
+n_promoter,HUGEINT,survey evidence,
+n_passive,HUGEINT,survey evidence,
+n_detractor,HUGEINT,survey evidence,
+nps_category_month,VARCHAR,survey evidence,Worst category in month; NULL if not surveyed
+n_both_same_interaction,HUGEINT,survey evidence,CSAT and NPS on same interaction
+n_nps_on_open_issue,HUGEINT,survey evidence,Survey timing check
+survey_coverage,VARCHAR,coverage,csat+nps / csat_only / nps_only / none
+evidence_basis,VARCHAR,coverage,Components used in score
+nps_status_l3m,VARCHAR,look-back context,detractor_seen / surveyed_no_detractor / not_surveyed - not in score
+csat_status_l3m,VARCHAR,look-back context,low_csat_seen / surveyed_no_low_csat / not_surveyed - not in score
+last_nps_observed,DOUBLE,look-back context,Labelled context only - never carried into score
+last_nps_month,DATE,look-back context,
+months_since_last_nps,BIGINT,look-back context,
+w_text_eff,DOUBLE,score,Effective weight after re-normalisation
+w_csat_eff,DOUBLE,score,
+w_nps_eff,DOUBLE,score,
+contrib_text,DOUBLE,score,Contribution to score
+contrib_csat,DOUBLE,score,
+contrib_nps,DOUBLE,score,
+survey_score,DOUBLE,score,"Weighted CSAT/NPS (-1..1), NULL if none"
+sentiment_score,DOUBLE,score,Observed-only composite (-1..1); NULL = not available
+sentiment_status,VARCHAR,score,scored / not_available
+lowest_component,VARCHAR,score,Most negative component
+drivers,VARCHAR,score,Plain-English reasons
+text_survey_conflict,BOOLEAN,confidence,Sign disagreement >= CONFLICT_GAP
+confidence_band,VARCHAR,confidence,high / medium / low / not_available
+confidence_score,DOUBLE,confidence,0-1
+voice_action,VARCHAR,action,NPS/CSAT-driven next action
+score_version,VARCHAR,lineage,
+score_params,VARCHAR,lineage,
+built_at,TIMESTAMP WITH TIME ZONE,lineage,

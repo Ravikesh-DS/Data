@@ -1,0 +1,14 @@
+test,violations,result
+NPS values NULL when no response,0,PASS
+CSAT values NULL when no response,0,PASS
+NPS weight 0 when not observed,0,PASS
+CSAT weight 0 when not observed,0,PASS
+No score without evidence,0,PASS
+not_available <=> NULL score,0,PASS
+"Score within [-1, 1]",0,PASS
+Effective weights sum to 1,0,PASS
+Survey cap respected,0,PASS
+SQL score == Python reference (200k sample),0,PASS
+SQL confidence band == Python reference,0,PASS
+No profile column in score formula,0,PASS
+No look-back / last-NPS field in score formula,0,PASS

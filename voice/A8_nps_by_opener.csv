@@ -1,0 +1,16 @@
+opener,gt_label,n_texts,n,avg_nps,avg_csat,avg_gt_score
+I am considering leaving because of this,negative,24,66655,4.59,2.05,-0.587
+I have contacted you several times already,negative,24,66798,4.61,2.04,-0.587
+I am very disappointed,negative,24,66657,4.61,2.05,-0.586
+This is really frustrating,negative,24,67025,4.62,2.05,-0.586
+This is unacceptable,negative,24,67024,4.64,2.04,-0.586
+Following up on my earlier request,neutral,24,33999,6.51,3.0,0.005
+Wanted to confirm a detail,neutral,24,33967,6.51,3.0,0.005
+Just checking in about something,neutral,24,33654,6.53,3.0,0.004
+Hi,neutral,24,33843,6.54,3.01,0.004
+Can you help me with this,neutral,24,33852,6.54,3.03,0.005
+Great experience so far,positive,24,99286,8.35,4.0,0.614
+Love the product overall,positive,24,99659,8.35,4.0,0.613
+Really happy with the service,positive,24,99291,8.35,4.0,0.614
+Thanks so much for the quick help,positive,24,99260,8.36,3.99,0.613
+Appreciate the support team,positive,24,99030,8.37,4.0,0.614

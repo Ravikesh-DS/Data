@@ -1,0 +1,6 @@
+loyalty_tier,customers_with_nps,n_nps,nps_resp_pct,avg_nps,avg_csat,nps_index,suppressed
+Bronze,38311,41677,12.03,5.9,2.7,-47.7,False
+Silver,32902,36290,11.99,6.82,3.19,-18.1,False
+Gold,23967,26792,11.99,7.45,3.52,5.1,False
+Platinum,10588,12018,12.07,7.95,3.81,24.7,False
+Diamond,2928,3341,11.97,8.42,4.06,44.0,False

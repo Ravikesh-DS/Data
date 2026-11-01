@@ -1,0 +1,74 @@
+sentiment_label,issue_clause,n,n_nps,avg_nps,avg_csat,avg_gt_score
+negative,I want to close my account.,10342,1270,4.45,1.99,-0.616
+negative,there is a fee I do not recognise.,20001,2398,4.45,1.99,-0.619
+negative,I was charged twice this month.,19862,2384,4.47,2.0,-0.616
+negative,my issue was never properly addressed.,30281,3590,4.5,2.0,-0.62
+negative,the service quality has dropped a lot.,30255,3656,4.51,2.0,-0.62
+negative,the app keeps crashing at login.,26078,3165,4.52,1.99,-0.616
+negative,how do I stop auto-renewal?,10435,1259,4.52,1.99,-0.621
+negative,the website shows an error on payment.,26134,3169,4.52,1.99,-0.616
+negative,please cancel my subscription.,10667,1219,4.53,2.0,-0.619
+negative,I cannot complete checkout online.,26042,3123,4.53,2.0,-0.617
+negative,my refund has not arrived.,19883,2428,4.54,2.0,-0.617
+negative,I was treated poorly on my last visit.,30215,3634,4.54,1.99,-0.62
+negative,I would like more payment options.,3991,477,4.92,2.22,-0.472
+negative,can I add another user to my plan?,3903,457,4.93,2.19,-0.475
+negative,is there an upgrade available for me?,3812,457,4.94,2.22,-0.471
+negative,when does my plan renew?,15865,1905,4.95,2.2,-0.479
+negative,the onboarding steps were clear.,3897,483,4.95,2.21,-0.471
+negative,what are the terms of my current plan?,15932,1925,4.98,2.22,-0.481
+negative,how do I update my account details?,15930,1880,4.99,2.2,-0.482
+negative,do you plan to offer a premium bundle?,3930,466,5.0,2.25,-0.469
+negative,the agent was excellent and solved it fast.,851,104,5.01,2.35,-0.403
+negative,delivery was faster than expected.,865,115,5.14,2.36,-0.393
+negative,the new app layout could be simpler.,4089,507,5.19,2.26,-0.468
+negative,the new rewards program is fantastic.,899,92,5.32,2.36,-0.393
+neutral,the service quality has dropped a lot.,5909,712,6.37,2.95,-0.024
+neutral,my refund has not arrived.,3844,434,6.37,2.97,-0.025
+neutral,I was charged twice this month.,3816,434,6.4,2.98,-0.022
+neutral,I want to close my account.,2047,233,6.43,2.92,-0.024
+neutral,the app keeps crashing at login.,5054,576,6.44,2.95,-0.02
+neutral,the website shows an error on payment.,4991,589,6.44,2.98,-0.022
+neutral,please cancel my subscription.,1992,245,6.45,2.94,-0.022
+neutral,I was treated poorly on my last visit.,5901,790,6.45,2.97,-0.021
+neutral,I cannot complete checkout online.,5045,597,6.46,2.96,-0.022
+neutral,there is a fee I do not recognise.,3849,440,6.5,2.95,-0.021
+neutral,my issue was never properly addressed.,5883,695,6.5,2.97,-0.023
+neutral,how do I stop auto-renewal?,2066,236,6.51,2.95,-0.026
+neutral,is there an upgrade available for me?,4628,502,6.51,3.02,0.02
+neutral,the agent was excellent and solved it fast.,2129,250,6.53,3.03,0.036
+neutral,the onboarding steps were clear.,4960,568,6.54,3.01,0.023
+neutral,do you plan to offer a premium bundle?,4595,532,6.54,3.03,0.024
+neutral,I have a question,33843,4037,6.54,3.01,0.004
+neutral,what are the terms of my current plan?,16506,1954,6.55,3.03,0.019
+neutral,when does my plan renew?,16703,2030,6.55,3.04,0.019
+neutral,the new rewards program is fantastic.,2126,292,6.57,3.02,0.036
+neutral,the new app layout could be simpler.,5018,633,6.58,3.06,0.021
+neutral,how do I update my account details?,16585,2040,6.6,3.03,0.02
+neutral,delivery was faster than expected.,2091,271,6.62,3.04,0.031
+neutral,I would like more payment options.,4963,622,6.63,3.06,0.025
+neutral,can I add another user to my plan?,4771,581,6.64,3.05,0.022
+positive,I cannot complete checkout online.,3900,446,7.79,3.73,0.46
+positive,my issue was never properly addressed.,4440,507,7.8,3.79,0.459
+positive,I want to close my account.,1564,174,7.86,3.8,0.469
+positive,the website shows an error on payment.,3841,417,7.89,3.75,0.458
+positive,I was treated poorly on my last visit.,4467,552,7.89,3.74,0.457
+positive,the service quality has dropped a lot.,4531,538,7.91,3.73,0.456
+positive,my refund has not arrived.,2902,343,7.93,3.76,0.459
+positive,there is a fee I do not recognise.,2962,363,7.93,3.73,0.456
+positive,the app keeps crashing at login.,3905,474,7.94,3.74,0.458
+positive,I was charged twice this month.,3025,349,7.98,3.73,0.455
+positive,please cancel my subscription.,1521,197,8.02,3.74,0.456
+positive,how do I stop auto-renewal?,1487,207,8.02,3.76,0.465
+positive,what are the terms of my current plan?,77185,9197,8.36,4.0,0.615
+positive,when does my plan renew?,77243,9270,8.36,4.0,0.614
+positive,how do I update my account details?,76994,9252,8.37,4.0,0.615
+positive,I would like more payment options.,29336,3556,8.37,4.03,0.632
+positive,can I add another user to my plan?,27075,3184,8.38,4.02,0.632
+positive,the new app layout could be simpler.,29395,3552,8.42,4.04,0.634
+positive,is there an upgrade available for me?,27190,3249,8.42,4.03,0.633
+positive,the onboarding steps were clear.,29478,3575,8.42,4.02,0.632
+positive,do you plan to offer a premium bundle?,27034,3302,8.43,4.02,0.631
+positive,delivery was faster than expected.,19100,2356,8.44,4.07,0.657
+positive,the new rewards program is fantastic.,18889,2272,8.46,4.07,0.658
+positive,the agent was excellent and solved it fast.,19062,2330,8.48,4.07,0.656

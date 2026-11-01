@@ -1,0 +1,9 @@
+sentiment_label,nps_cat,n,pct_inactive_next
+negative,detractor,25078,34.88
+negative,passive,2663,31.84
+neutral,detractor,6916,30.38
+neutral,passive,6103,28.49
+neutral,promoter,1017,30.58
+positive,detractor,3774,27.05
+positive,passive,17200,25.2
+positive,promoter,20314,23.6

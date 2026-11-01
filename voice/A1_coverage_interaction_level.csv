@@ -1,0 +1,2 @@
+n_interactions,n_csat,csat_pct,n_nps,nps_pct,n_both,both_pct,n_nps_only,n_csat_only,p_nps_given_csat,p_nps_given_no_csat,expected_both_pct_if_independent,observed_vs_expected
+1000000,450532,45.05,120118,12.01,54156.0,5.42,65962.0,396376.0,12.02,12.0,5.41,1.002

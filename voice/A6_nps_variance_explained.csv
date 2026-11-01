@@ -1,0 +1,8 @@
+explained_by,r2
+interaction_type,0.306
+resolution_status,0.089
+fcr,0.199
+sentiment_label,0.591
+interaction_type + sentiment_label,0.596
+interaction_type + sentiment_label + resolution_status,0.598
+sscore (linear),0.665

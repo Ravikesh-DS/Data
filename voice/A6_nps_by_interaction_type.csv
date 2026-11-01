@@ -1,0 +1,9 @@
+interaction_type,n_nps,avg_nps,avg_csat,promoter_pct,detractor_pct,nps_index
+billing_dispute,9938,5.18,2.35,5.2,76.6,-71.3
+technical_issue,12999,5.2,2.35,5.0,76.6,-71.7
+complaint,15165,5.21,2.35,4.7,76.5,-71.7
+cancellation_request,5198,5.21,2.35,5.4,76.6,-71.3
+general_inquiry,40954,7.56,3.57,35.0,26.7,8.3
+product_request,13178,7.76,3.68,38.9,22.5,16.5
+feedback,14417,7.77,3.69,38.4,22.5,15.9
+compliment,8269,8.11,3.88,45.4,15.7,29.7

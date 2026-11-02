@@ -1,0 +1,9 @@
+component,n_observed,min,p50,max,mean
+tx_reliability,1270709,0.0,100.0,100.0,95.47
+spend_level,1270709,0.0,50.0,100.0,49.28
+spend_trend,170399,0.0,35.1,100.0,47.08
+engagement_level,1311215,0.0,0.0,100.0,10.94
+engagement_quality,774530,0.0,100.0,100.0,81.78
+engagement_trend,146481,10.0,50.0,100.0,51.97
+service_experience,925538,0.0,100.0,100.0,77.9
+csat_health,434728,0.0,50.0,100.0,54.31

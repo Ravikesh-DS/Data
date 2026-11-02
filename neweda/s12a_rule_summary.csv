@@ -1,0 +1,4 @@
+core_rule,definition,configured,core_customer_months,core_customers,latest_month_core_cm,vs_tx_plus_one_pct,candidates_passing_gate,top_1_cohort,top_1_score,top_5
+tx_plus_one,history + transactions + (engagements or interactions),True,281982,176224,46930,100.0,17,customer_segment = Affluent,0.759,customer_segment=Affluent; loyalty_tier=Platinum; loyalty_tier=Gold; preferred_channel=mobile_app; region=APAC
+any_two,history + any 2 of transactions / engagements / interactions,False,377513,220280,60875,133.9,19,preferred_channel = mobile_app,0.623,preferred_channel=mobile_app; region=North America; loyalty_tier=Platinum; preferred_channel=web; customer_segment=Affluent
+any_one,history + any 1 source (= all active months with history),False,1888205,600191,273081,669.6,23,region = Europe,0.606,region=Europe; customer_segment=Mass Market; preferred_channel=email; loyalty_tier=Bronze; preferred_channel=web

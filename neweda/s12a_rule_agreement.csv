@@ -1,0 +1,4 @@
+core_rule,spearman_score_vs_tx_plus_one,n_passing_gate,top_1_same,top_5_overlap
+tx_plus_one,1.0,17,True,5
+any_two,0.741,19,False,3
+any_one,0.001,23,False,0

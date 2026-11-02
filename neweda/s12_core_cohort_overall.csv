@@ -1,0 +1,2 @@
+dimension,segment,n_core_customers,n_core_customer_months,coverage_pct,avg_active_months_history,survey_label_pct,interaction_label_pct,avg_spend_pctile,std_spend_pctile,risk_signal_pct,max_mom_swing_pct
+ALL,ALL,176224,281982.0,14.93,5.02,25.24,46.21,0.5082,0.301,16.98,33.39795070617557

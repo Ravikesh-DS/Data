@@ -1,0 +1,208 @@
+# EDA summary - Customer Health & Sentiment Scoring
+
+Data window: 2025-10-01 to 2026-10-01 (exclusive) | grain: customer_id x month
+
+## Auto-flagged findings
+
+- **S3A** All configured business mappings exist in the data and every engagement event is classified
+- **S3A** Q1 Highest complaint rate: phone (25.39 vs overall 25.3; Cramer's V 0.0023) -> highest, but differences across channels are negligible
+- **S3A** Q2 Highest proportion of negative sentiment: email (33.47 vs overall 33.42; Cramer's V 0.0013) -> highest, but differences across channels are negligible
+- **S3A** Q3 Highest unresolved interaction rate: branch (18.68 vs overall 18.54; Cramer's V 0.0017) -> highest, but differences across channels are negligible
+- **S3A** Q4 Does CSAT vary across channels?: high: branch / low: phone (3.183 vs overall 3.178; epsilon-squared (Kruskal-Wallis) -1e-05) -> CSAT is effectively the same across channels
+- **S3A** Q5 Cancellation requests more frequent through specific channels: social_media (4.43 vs overall 4.37; Cramer's V 0.002) -> highest, but differences across channels are negligible
+- **S4A** cm_feat built with 75 documented features for 2,936,195 active customer-months; survey features are NULL when not observed (no imputation)
+- **S1** 19.0% of customers have no activity in any source in the period
+- **S2** interactions.nps_score: 88.0% null/blank - check if expected
+- **S2** engagements.app_version: 66.0% null/blank - check if expected
+- **S2** interactions.csat_score: 54.9% null/blank - check if expected
+- **S2** engagements.campaign_id: 46.3% null/blank - check if expected
+- **S2** transactions: 'amount < 0' -> 98,758 rows (6.58%)
+- **S2** 5 currencies in transactions - do NOT sum amounts across currencies; use FX conversion or within-currency percentiles
+- **S3** tx.amt skew=5.77 -> consider log1p / capping at P99
+- **S3** tx.disc skew=18.35 -> consider log1p / capping at P99
+- **S3** eng.dur skew=4.22 -> consider log1p / capping at P99
+- **S3** itx.dur skew=3.00 -> consider log1p / capping at P99
+- **S3** eng.event_type: 1 rare levels (<1.0%) -> group as 'Other'
+- **S3** cust.country: 1 rare levels (<1.0%) -> group as 'Other'
+- **S5** 17.7% of active customer-months have >= 2 sources (sparse -> confidence must reflect missing sources)
+- **S5** On average 25.2% of customers are active in a given month
+- **S6** Customers first seen in 2025-10 are left-censored (history before the window is unknown)
+- **S6** 41.5% of active customers have < 3 active months -> weak trend history
+- **S7** Only 0.0% of texts are unique -> template-like text; check for overfitting and memorisation in the sentiment model
+- **S7** Top 100 texts cover 67.2% of interactions
+- **S7A** CSAT on 45.1%, NPS on 12.0%, both on 5.42% of interactions (observed/expected-if-independent = 1.00) -> collected independently
+- **S7A** CSAT coverage flat across all 7 dimensions (max spread 0.64 pp, max Cramer's V 0.0026)
+- **S7A** NPS coverage flat across all 7 dimensions (max spread 0.49 pp, max Cramer's V 0.0033)
+- **S7A** Customers with 2+ responses in 12 months: CSAT 28.9%, NPS 9.6% of responders
+- **S7A** csat_response_flag: propensity AUC 0.499 (~0.5) -> availability not predictable from type/channel/status/sentiment/segment/tier
+- **S7A** nps_response_flag: propensity AUC 0.501 (~0.5) -> availability not predictable from type/channel/status/sentiment/segment/tier
+- **S7B** NPS SQL features match the Python reference on 2,000 customer-months: PASS
+- **S7B** CSAT vs sentiment score: Pearson r = 0.823; sentiment rises monotonically with CSAT: True
+- **S7B** Official NPS (population) averages -17.2; use it for reporting. Customer-month nps_net_score is an individual loyalty indicator only
+- **S7C** Channel x interaction type: Cramer's V 0.0027; largest over-representation = cancellation_request via social_media (lift 1.01)
+- **S7C** Channel x sentiment: Cramer's V 0.0025 (negligible association)
+- **S7C** Channel x resolution status: Cramer's V 0.0021; lowest resolved share = branch
+- **S7C** Channel x CSAT/NPS: NPS index ranges -17.8 to -16.3; effect size CSAT -1e-05, NPS -1e-05 (negligible)
+- **S7C** Channel x FCR: FCR rate 66.23% (branch) to 66.51% (social_media); CSAT gain when resolved first time +1.08 on average
+- **S7D** technical_issue: pct_negative=72.0, pct_positive=10.72, pct_neutral=17.28, avg_csat=2.349, resolution_rate=70.26, fcr_rate=45.85, unresolved_rate=29.74
+- **S7D** feedback: pct_positive=74.3, pct_negative=10.09, pct_neutral=15.61, avg_csat=3.695, avg_nps=7.774, nps_index=15.9
+- **S7D** product_request: pct_positive=73.52, pct_neutral=15.95, pct_negative=10.53, avg_csat=3.676, pct_resolved=88.17, pct_escalated=4.62, pct_pending=3.99, pct_unresolved=3.22
+- **S7D** compliment: pct_positive=84.38, avg_csat=3.879, avg_nps=8.111, nps_index=29.7
+- **S7D** Across interaction types: CSAT epsilon-squared 0.3095, NPS 0.305, resolution Cramer's V 0.1266; lowest CSAT = technical_issue (2.349), highest = compliment (3.879)
+- **S7E** Events per engagement channel: email=3, mobile_app=5, push_notification=3, sms=3, web=5
+- **S7E** Engagement polarity by channel (Cramer's V 0.527): most negative = push_notification (55.03%), most positive = sms (90.01%)
+- **S7E** Conversion: highest mobile_app (7.067%); unsubscribe/opt-out highest email (11.472%)
+- **S7E** Session duration (non-zero sessions; channels without durations shown as NA): longest median push_notification (153.0s); zero-duration share up to 100.0% -> do not compare duration across channels without excluding zero/NA sessions
+- **S7E** Push usage vs engagement quality: Spearman(push open rate, non-push quality) = -0.006 on 19,002 customer-months; non-push quality 0.933-0.942 across push groups
+- **S7F** Interaction channel vs engagement channel (187,525 customer-months): Cramer's V 0.0056 (no meaningful link - channel preference differs by purpose)
+- **S7F** negative sentiment share vs negative engagement share: Spearman 0.019 (weak/none) on 187,525 customer-months
+- **S7F** complaint count vs positive engagement share: Spearman -0.010 (weak/none) on 113,469 customer-months
+- **S7F** avg CSAT vs negative engagement share: Spearman -0.012 (weak/none) on 89,926 customer-months
+- **S8** eng_seconds ~ pages_viewed (rho=0.949) -> redundant; keep one
+- **S8** n_negative ~ avg_sentiment_gt (rho=-0.816) -> redundant; keep one
+- **S8** avg_sentiment_gt ~ avg_csat (rho=0.818) -> redundant; keep one
+- **S8** avg_sentiment_gt ~ avg_nps (rho=0.806) -> redundant; keep one
+- **S8** Cancellation request -> inactive next 3 months: 32.2% vs 29.0% baseline (lift 1.11x). Weak as churn proxy label
+- **S9** pct_active differs by 1.73x across loyalty_tier -> score vs segment/own history
+- **S9** complaint_rate differs by 4.13x across loyalty_tier -> score vs segment/own history
+- **S9** negative_rate differs by 12.14x across loyalty_tier -> score vs segment/own history
+- **S9** pct_2plus_sources differs by 1.67x across loyalty_tier -> score vs segment/own history
+- **S9** pct_2plus_sources differs by 1.50x across tenure_band -> score vs segment/own history
+- **S10** sentiment_label / sentiment_score_gt are ground truth -> evaluation only (label leakage otherwise)
+- **S10** tenure_months mostly implies as-of 2026-09 (98% of customers) -> snapshot field; recompute tenure for each scoring month
+- **S10** First month with scorable history: 2025-12 (first 2 months are warm-up only)
+- **S11** Sentiment Score input: PROXY: sentiment_score_gt (replace with Sentiment Agent output before production)
+- **S11** BHS guard tests PASS
+- **S11** BHS published for 58.1% of active customer-months on average; lowest-coverage component: engagement_trend (5.0% observed)
+- **S11** Sensitivity: most influential change = 'drop tx_reliability' (at-risk decile overlap 46.6%, rank corr 0.888); random weight perturbations keep median overlap 88.1%
+- **S11** Independent validation: BHS vs NPS Spearman 0.526, detractor AUC 0.783; leave-CSAT-out BHS vs CSAT Spearman 0.380
+- **S11** Out-of-time: inactivity AUC 0.505 vs in-time 0.511; suggested weights OOT AUC 0.514 vs initial 0.505. Review suggested weights with the business before adopting (BHS_WEIGHTS in 1A)
+- **S12** Top candidate cohort: customer_segment = Affluent (score 0.759, 40,370 core customers, coverage 16.66%). Confirm with business value before final selection.
+- **S12A** Core cohort size: tx_plus_one 281,982 | any_two 377,513 (133.9% of tx_plus_one) | any_one 1,888,205 customer-months
+- **S12A** any_two vs tx_plus_one: score Spearman 0.741, top-1 same = False, top-5 overlap 3/5; top cohort any_two = preferred_channel = mobile_app
+- **S12A** RECOMMENDATION: rankings differ between rules - review s12a_cohort_rank_comparison; prefer 'any_two' unless the business requires transaction-based value metrics for every cohort month, then keep 'tx_plus_one'
+- **S12A** 'any_one' is a reference only - single-source months are scored with low confidence (Step 11) but not used to select or validate the cohort
+
+## Output files
+
+- s10_column_role_register.csv
+- s10_eligibility_funnel_by_month.csv
+- s10_month_assignment_check.csv
+- s10_tenure_implied_as_of_date.csv
+- s11_1_component_spec.csv
+- s11_2_component_normalisation_check.csv
+- s11_2_redistribution_guard_tests.csv
+- s11_3_component_coverage_confidence.csv
+- s11_3_components_observed.csv
+- s11_3_score_coverage_by_month.csv
+- s11_4_bhs_bands.csv
+- s11_4_confidence_bands.csv
+- s11_5_random_weight_stability.csv
+- s11_5_weight_sensitivity.csv
+- s11_6_bhs_by_csat.csv
+- s11_6_bhs_by_nps_category.csv
+- s11_6_validation_csat_nps.csv
+- s11_7_component_auc_and_suggested_weights.csv
+- s11_7_oot_deciles.csv
+- s11_7_out_of_time_validation.csv
+- s11_7_weights_oot_comparison.csv
+- s12_cohort_scorecard.csv
+- s12_core_cohort_overall.csv
+- s12a_cohort_rank_comparison.csv
+- s12a_cohort_scorecard_any_one.csv
+- s12a_cohort_scorecard_any_two.csv
+- s12a_cohort_scorecard_tx_plus_one.csv
+- s12a_rule_agreement.csv
+- s12a_rule_size_by_month.csv
+- s12a_rule_summary.csv
+- s1_customers_without_activity.csv
+- s1_date_ranges.csv
+- s1_orphan_ids.csv
+- s1_schema_customers.csv
+- s1_schema_engagements.csv
+- s1_schema_interactions.csv
+- s1_schema_transactions.csv
+- s1_table_overview.csv
+- s2_amount_outliers_by_currency.csv
+- s2_events_per_customer_percentiles.csv
+- s2_invalid_value_rules.csv
+- s2_null_profile.csv
+- s2_nulls_by_month_engagements.csv
+- s2_nulls_by_month_interactions.csv
+- s2_resolution_status.csv
+- s2_top_customers_by_interactions.csv
+- s2_tx_currency_mix.csv
+- s2_tx_status_by_type.csv
+- s3_categorical_frequencies.csv
+- s3_categorical_summary.csv
+- s3_numeric_profile.csv
+- s3a_category_frequency_and_mapping.csv
+- s3a_channel_group_kpis.csv
+- s3a_channel_kpis.csv
+- s3a_channel_questions.csv
+- s3a_mapping_coverage.csv
+- s3a_mapping_issues.csv
+- s4_daily_volume_anomalies.csv
+- s4_day_of_week.csv
+- s4_days_with_data.csv
+- s4_mom_change_pct.csv
+- s4_monthly_trends.csv
+- s4a_feature_dictionary_and_coverage.csv
+- s5_coverage_by_month.csv
+- s5_customers_by_months_with_2plus_sources.csv
+- s5_n_sources_all_customer_months.csv
+- s5_source_combinations.csv
+- s6_active_months_distribution.csv
+- s6_activity_before_signup.csv
+- s6_first_active_month.csv
+- s6_last_active_month.csv
+- s6_lifecycle_status_by_month.csv
+- s6_mom_change_buckets.csv
+- s7_by_channel.csv
+- s7_channel_by_type.csv
+- s7_first_clause_label_mix_QA_ONLY.csv
+- s7_label_vs_score.csv
+- s7_manual_review_sample.csv
+- s7_resolution_vs_sentiment.csv
+- s7_second_clause_label_mix_QA_ONLY.csv
+- s7_sentiment_by_type.csv
+- s7_survey_by_sentiment_label.csv
+- s7_survey_distributions.csv
+- s7_survey_fill_and_correlation.csv
+- s7_text_quality.csv
+- s7_top_100_texts.csv
+- s7a_coverage_by_dimension.csv
+- s7a_csat_nps_overlap.csv
+- s7a_missingness_summary.csv
+- s7a_response_frequency_per_customer.csv
+- s7a_response_propensity_auc.csv
+- s7a_response_propensity_top_coefficients.csv
+- s7b_csat_health_distribution.csv
+- s7b_csat_vs_sentiment.csv
+- s7b_feedback_coverage_by_month.csv
+- s7b_nps_response_count_profile.csv
+- s7b_official_nps_vs_individual.csv
+- s7b_valid_vs_invalid_ratings.csv
+- s7c_channel_csat_nps_tests.csv
+- s7c_channel_x_csat_nps.csv
+- s7c_channel_x_fcr.csv
+- s7c_channel_x_resolution.csv
+- s7c_channel_x_sentiment.csv
+- s7c_channel_x_type_pct.csv
+- s7d_interaction_type_comparison.csv
+- s7d_interaction_type_profiles.csv
+- s7d_interaction_type_tests.csv
+- s7e_engagement_channel_kpis.csv
+- s7e_engagement_channel_x_event.csv
+- s7e_push_quality_correlation.csv
+- s7e_push_usage_vs_engagement_quality.csv
+- s7f_complaints_vs_engagement_quality.csv
+- s7f_cross_dataset_correlations.csv
+- s7f_csat_vs_negative_engagement.csv
+- s7f_interaction_vs_engagement_channel.csv
+- s7f_negative_sentiment_vs_negative_engagement.csv
+- s8_high_corr_pairs.csv
+- s8_signal_vs_next_months.csv
+- s8_spearman_correlation.csv
+- s9_segment_profile.csv
+- s9_segment_spread.csv

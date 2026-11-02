@@ -1,0 +1,25 @@
+dimension,segment,n_core_customers_tx_plus_one,passes_gate_tx_plus_one,score_tx_plus_one,score_ungated_tx_plus_one,rank_tx_plus_one,n_core_customers_any_two,passes_gate_any_two,score_any_two,score_ungated_any_two,rank_any_two,rank_change_any_two,n_core_customers_any_one,passes_gate_any_one,score_any_one,score_ungated_any_one,rank_any_one,rank_change_any_one
+customer_segment,Affluent,40370,True,0.759,0.759,1,48181,True,0.567,0.567,5,-4,123752,True,0.493,0.493,17,-16
+loyalty_tier,Platinum,22207,True,0.688,0.688,2,25744,True,0.591,0.591,3,-1,56290,True,0.498,0.498,16,-14
+loyalty_tier,Gold,44751,True,0.635,0.635,3,53929,True,0.565,0.565,6,-3,131800,True,0.553,0.553,8,-5
+preferred_channel,mobile_app,66592,True,0.621,0.621,4,83263,True,0.623,0.623,1,3,227644,True,0.571,0.571,6,-2
+region,APAC,42272,True,0.603,0.603,5,52903,True,0.522,0.522,8,-3,143640,True,0.513,0.513,13,-8
+preferred_channel,web,47566,True,0.551,0.551,6,59555,True,0.59,0.59,4,2,161771,True,0.576,0.576,5,1
+region,North America,59673,True,0.549,0.549,7,74744,True,0.602,0.602,2,5,204450,True,0.541,0.541,10,-3
+region,Europe,46053,True,0.513,0.513,8,57375,True,0.467,0.467,16,-8,156264,True,0.606,0.606,1,7
+preferred_channel,email,26642,True,0.493,0.493,9,33195,True,0.476,0.476,14,-5,90428,True,0.584,0.584,3,6
+tenure_band,24-47m,60038,True,0.477,0.477,10,74942,True,0.482,0.482,12,-2,207055,True,0.529,0.529,11,-1
+tenure_band,48m+,74574,True,0.455,0.455,11,93251,True,0.492,0.492,11,0,257872,True,0.555,0.555,7,4
+loyalty_tier,Bronze,48971,True,0.43,0.43,12,65800,True,0.465,0.465,17,-5,213886,True,0.576,0.576,4,8
+loyalty_tier,Silver,53529,True,0.416,0.416,13,67149,True,0.514,0.514,10,3,183132,True,0.461,0.461,20,-7
+preferred_channel,phone,21205,True,0.401,0.401,14,26490,True,0.419,0.419,18,-4,72279,True,0.426,0.426,23,-9
+customer_segment,Mass Market,83440,True,0.397,0.397,15,106426,True,0.516,0.516,9,6,296618,True,0.604,0.604,2,13
+customer_segment,Small Business,20099,True,0.396,0.396,16,25595,True,0.479,0.479,13,3,70994,True,0.492,0.492,18,-2
+tenure_band,12-23m,26194,True,0.387,0.387,17,32866,True,0.385,0.385,19,-2,90775,True,0.483,0.483,19,-2
+loyalty_tier,Diamond,6766,False,0.0,0.628,18,7658,False,0.0,0.536,22,-4,15083,False,0.0,0.449,24,-6
+tenure_band,0-11m,15418,False,0.0,0.607,19,19221,False,0.0,0.619,20,-1,44489,True,0.509,0.509,15,4
+customer_segment,Premium,16003,False,0.0,0.598,20,19166,False,0.0,0.507,24,-4,49802,True,0.457,0.457,21,-1
+region,LATAM,17615,False,0.0,0.54,21,21962,True,0.526,0.526,7,14,59873,True,0.51,0.51,14,7
+preferred_channel,branch,14219,False,0.0,0.505,22,17777,False,0.0,0.534,23,-1,48069,True,0.514,0.514,12,10
+region,Middle East & Africa,10611,False,0.0,0.452,23,13296,False,0.0,0.555,21,2,35964,True,0.455,0.455,22,1
+customer_segment,Student,16312,False,0.0,0.401,24,20912,True,0.469,0.469,15,9,59025,True,0.546,0.546,9,15

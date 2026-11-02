@@ -1,0 +1,6 @@
+question,evidence,answer
+dissatisfieds have lower transaction activity?,n_tx dissatisfied vs satisfied (survey month),yes - small effect (d=+0.14)
+dissatisfieds have lower digital engagement?,n_eng dissatisfied vs satisfied (survey month),yes - small effect (d=+0.16)
+Negative text followed by declining purchasing?,"% with >30% TX decline next, negative vs positive text",negative 58.7% vs positive 56.7%
+CSAT adds information beyond text + behaviour?,"delta AUC on test customers, per future outcome",y_inactive_next -0.0002; y_no_tx_next -0.0003; y_no_eng_next -0.0002; y_tx_decline_next -0.0003
+Flag satisfieds with declining behaviour?,"fully-inactive-next rate, satisfied declining vs not",17.7% vs 28.3%

@@ -1,0 +1,14 @@
+dataset,logical,resolved_column
+transactions,ts,transaction_ts
+transactions,type,transaction_type
+transactions,status,transaction_status
+transactions,amount,amount
+transactions,currency,currency
+engagements,ts,event_ts
+engagements,channel,engagement_channel
+engagements,event,event_type
+engagements,duration,session_duration_sec
+engagements,pages,pages_viewed
+engagements,campaign,campaign_id
+engagements,converted,-- not found --
+interactions,duration,duration_sec

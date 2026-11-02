@@ -1,0 +1,25 @@
+outcome,description,rate_bad_pct,rate_good_pct,lift_bad_vs_good,metric,subset
+y_no_tx_next,no transaction,63.08432118094386,54.67431342378888,1.1538200890053751,NPS,own respondents
+y_no_eng_next,no engagement,59.85517781256989,49.34955937893412,1.2128817068652555,NPS,own respondents
+y_no_int_next,no interaction,70.47081189890405,62.32573320277894,1.1306856458410977,NPS,own respondents
+y_inactive_next,fully inactive (A9 definition),33.18329232833818,23.966055858628245,1.3845954680269825,NPS,own respondents
+y_tx_decline_next,transactions decline >30%,60.01648804616653,55.618707372523545,1.0790701704767693,NPS,own respondents
+y_eng_decline_next,engagement declines >30%,62.17675771108111,56.26924153372516,1.104986596874871,NPS,own respondents
+y_no_tx_next,no transaction,63.41342887145592,54.388489208633096,1.1659347371868218,NPS,both observed
+y_no_eng_next,no engagement,59.676323429489166,49.42446043165468,1.207424884526782,NPS,both observed
+y_no_int_next,no interaction,70.67144357279635,62.27132579650565,1.1348954381305636,NPS,both observed
+y_inactive_next,fully inactive (A9 definition),33.39922169374267,23.586844809866392,1.4160105755124888,NPS,both observed
+y_tx_decline_next,transactions decline >30%,58.951507208387945,56.9247546346783,1.0356040634117192,NPS,both observed
+y_eng_decline_next,engagement declines >30%,61.86851211072665,56.34674922600619,1.0979961215255334,NPS,both observed
+y_no_tx_next,no transaction,63.72152808792932,55.390284048866675,1.1504098450138407,CSAT,own respondents
+y_no_eng_next,no engagement,60.58648598599143,50.10193141148578,1.2092644790157148,CSAT,own respondents
+y_no_int_next,no interaction,70.91099225498633,63.123480466921364,1.1233694931024258,CSAT,own respondents
+y_inactive_next,fully inactive (A9 definition),33.485474014444286,24.52696274595672,1.3652515544332688,CSAT,own respondents
+y_tx_decline_next,transactions decline >30%,60.68181818181818,55.43639838606923,1.0946205011230867,CSAT,own respondents
+y_eng_decline_next,engagement declines >30%,62.757840013416065,56.13677484368916,1.117945236222833,CSAT,own respondents
+y_no_tx_next,no transaction,64.67675130560058,55.55345674348319,1.164225506330668,CSAT,both observed
+y_no_eng_next,no engagement,60.976048982531964,49.92444276539479,1.2213666413678554,CSAT,both observed
+y_no_int_next,no interaction,70.85359265262021,63.17214456617555,1.1215954933807577,CSAT,both observed
+y_inactive_next,fully inactive (A9 definition),34.39582207815595,24.354615287747137,1.4122917431366928,CSAT,both observed
+y_tx_decline_next,transactions decline >30%,60.35686578743211,56.32003585835948,1.0716766221389658,CSAT,both observed
+y_eng_decline_next,engagement declines >30%,63.21440942154486,55.75408261287224,1.133807722395386,CSAT,both observed

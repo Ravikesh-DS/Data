@@ -1,0 +1,9 @@
+interaction_type,consistent_or_mild,dissatisfied_CSAT_but_NPS_promoter,satisfied_CSAT_but_NPS_detractor
+billing_dispute,96.24,0.38,3.38
+cancellation_request,96.72,0.38,2.91
+complaint,96.29,0.35,3.36
+compliment,93.67,0.38,5.95
+feedback,93.46,0.47,6.07
+general_inquiry,93.6,0.48,5.92
+product_request,93.96,0.46,5.58
+technical_issue,95.92,0.27,3.81

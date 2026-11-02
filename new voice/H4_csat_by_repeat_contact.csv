@@ -1,0 +1,3 @@
+dataset,feature,bucket,n,avg_score,dissatisfied_pct,satisfied_pct,csat_net,suppressed
+interactions,repeat_contact,first_contact,434121,3.1724726516339916,29.488783081214688,42.24812897786562,12.8,False
+interactions,repeat_contact,repeat_contact,16411,3.3172262506855157,24.83090609956736,47.742367923953445,22.9,False

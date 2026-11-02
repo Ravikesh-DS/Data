@@ -1,0 +1,3 @@
+dataset,feature,bucket,n,avg_score,detractor_pct,promoter_pct,nps_index,suppressed
+interactions,repeat_contact,first_contact,115820,6.784622690381626,43.168710067345884,25.586254532895875,-17.6,False
+interactions,repeat_contact,repeat_contact,4298,7.092368543508608,36.62168450442066,29.944160074453237,-6.7,False

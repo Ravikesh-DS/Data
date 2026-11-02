@@ -1,0 +1,6 @@
+question,evidence,answer
+detractors have lower transaction activity?,n_tx detractor vs promoter (survey month),yes - small effect (d=+0.14)
+detractors have lower digital engagement?,n_eng detractor vs promoter (survey month),yes - small effect (d=+0.17)
+Negative text followed by declining purchasing?,"% with >30% TX decline next, negative vs positive text",negative 55.1% vs positive 56.3%
+NPS adds information beyond text + behaviour?,"delta AUC on test customers, per future outcome",y_inactive_next -0.0011; y_no_tx_next -0.0000; y_no_eng_next +0.0001; y_tx_decline_next -0.0056
+Flag promoters with declining behaviour?,"fully-inactive-next rate, promoter declining vs not",17.1% vs 27.8%
